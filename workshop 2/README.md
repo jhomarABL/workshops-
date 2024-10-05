@@ -22,11 +22,9 @@
 
 1. **Clone the Repository**
 
-   ```bash
-   git clone https://github.com/your-username/ArcadeMachine-Customizer.git
-   cd ArcadeMachine-Customizer
 
-### Example 
+
+### Example of interfaces
 
 Select a machine type:
 1. Dance Revolution
