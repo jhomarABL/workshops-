@@ -22,6 +22,7 @@ along with ArcadeMachine-Customizer. If not, see <https://www.gnu.org/licenses/>
 
 from arcade_machine import ArcadeMachine
 
+
 def main():
     """
     The main function that runs the CLI application.
@@ -38,14 +39,13 @@ def main():
     9. Finalize purchase.
     10. Exit.
 
-    The function creates an instance of the ArcadeMachine class and enters a loop where it 
+    The function creates an instance of the ArcadeMachine class and enters a loop where it
     presents the user with a menu and processes their choices by calling appropriate methods
     on the ArcadeMachine instance.
-    
-    """
-    machine = ArcadeMachine()  
 
-    
+    """
+    machine = ArcadeMachine()
+
     while True:
         print("\n--- Main Menu ---")
         print("1. Select material")
@@ -61,31 +61,31 @@ def main():
 
         choice = input("Select an option: ")
 
-       
         if choice == "1":
-            machine.select_material() 
+            machine.select_material()
         elif choice == "2":
-            machine.select_appearance()  
+            machine.select_appearance()
         elif choice == "3":
-            machine.select_controls()  
+            machine.select_controls()
         elif choice == "4":
-            machine.select_sound_system()  
+            machine.select_sound_system()
         elif choice == "5":
-            machine.select_connectivity()  
+            machine.select_connectivity()
         elif choice == "6":
-            machine.select_storage()  
+            machine.select_storage()
         elif choice == "7":
-            machine.show_catalog()  
+            machine.show_catalog()
         elif choice == "8":
-            machine.add_game()  
+            machine.add_game()
         elif choice == "9":
-            machine.finalize_purchase()  
+            machine.finalize_purchase()
             break
         elif choice == "10":
             print("Exiting the application...")
             break
         else:
             print("Invalid option, please try again.")
+
 
 if __name__ == "__main__":
     main()
